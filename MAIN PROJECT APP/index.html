@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Accepted App</title>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ffcc">
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading App...</p>
+    </div>
+
+    <!-- MAIN APP -->
+    <div class="app" id="app">
+        <h1>Access Accepted</h1>
+
+        <p>
+            HFR Toyo, how una dey? Happy matriculation to your baby bro 🎉  
+            Hope everyone is doing well. Is your mum in Jigawa now?
+        </p>
+
+        <img 
+            src="image119/Screenshot 2026-02-07 143018.png"
+            alt="Matriculation celebration"
+        >
+
+        <p>
+            Una dey enjoy ooo — that one na big package for real 💯
+        </p>
+
+        <img 
+            src="image120/Screenshot 2026-02-07 141232.png"
+            alt="Family celebration"
+        >
+
+        <button onclick="showMessage()">Tap Me</button>
+    </div>
+
+    <!-- App logic -->
+    <script src="app.js"></script>
+
+    <!-- Service Worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
+</body>
+</html>
